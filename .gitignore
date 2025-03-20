@@ -47,5 +47,15 @@ data/faces/*
 !data/faces/employees/.gitkeep
 !data/faces/known_customers/.gitkeep
 
+# Models - don't commit large model files
+data/models/*.pt
+data/models/*.onnx
+data/models/*.pth
+data/models/*.torchscript
+*.pt
+*.onnx
+*.pth
+*.torchscript
+
 # Keep empty directories
 !/**/.gitkeep
