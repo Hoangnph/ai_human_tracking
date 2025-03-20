@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "retail-monitor"
+version = "0.1.0"
+description = "Hệ thống giám sát thông minh sử dụng YOLO, face-recognition và MediaPipe"
+readme = "README.md"
+authors = [
+    {name = "AI_HUMAN_TRACKING Team"}
+]
+requires-python = ">=3.9"
+
+[tool.black]
+line-length = 88
+target-version = ["py39"]
+
+[tool.isort]
+profile = "black"
+line_length = 88
+
+[tool.mypy]
+python_version = "3.9"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+testpaths = ["tests"]

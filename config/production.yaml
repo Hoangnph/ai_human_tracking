@@ -1,0 +1,19 @@
+# Production configuration file for Retail Monitor
+
+# Kế thừa từ cấu hình mặc định và ghi đè các giá trị cần thiết
+
+# Application settings
+app_name: "Retail Monitor"
+
+# YOLO Configuration
+yolo_model: "yolov8m.pt"  # Mô hình cân bằng giữa tốc độ và độ chính xác
+yolo_confidence: 0.5      # Ngưỡng tin cậy chuẩn
+
+# Face Recognition Configuration
+face_recognition_tolerance: 0.5  # Ngưỡng chặt hơn cho nhận diện khuôn mặt
+
+# Database settings
+database_url: "sqlite:///./data/prod.db"  # Có thể thay bằng PostgreSQL trong tương lai
+
+# Logging
+log_level: "INFO"  # Ít chi tiết hơn, tập trung vào thông tin quan trọng 

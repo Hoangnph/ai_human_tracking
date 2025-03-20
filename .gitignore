@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.conda/
+.python-version
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Project specific
+logs/*.log
+data/videos/*
+!data/videos/.gitkeep
+data/faces/*
+!data/faces/.gitkeep
+!data/faces/employees/.gitkeep
+!data/faces/known_customers/.gitkeep
+
+# Keep empty directories
+!/**/.gitkeep

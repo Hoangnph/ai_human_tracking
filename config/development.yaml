@@ -1,0 +1,16 @@
+# Development configuration file for Retail Monitor
+
+# Kế thừa từ cấu hình mặc định và ghi đè các giá trị cần thiết
+
+# Application settings
+app_name: "Retail Monitor (Development)"
+
+# YOLO Configuration
+yolo_model: "yolov8n.pt"  # Sử dụng mô hình nhỏ cho development để tăng tốc độ
+yolo_confidence: 0.4      # Ngưỡng thấp hơn để dễ debug
+
+# Database settings
+database_url: "sqlite:///./data/dev.db"  # Database riêng cho môi trường dev
+
+# Logging
+log_level: "DEBUG"  # Chi tiết hơn để debug 
